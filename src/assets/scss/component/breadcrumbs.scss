@@ -1,0 +1,59 @@
+
+.breadcrumbs {
+  background: $lightgray;
+  height: 50px;
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
+  padding: 0 50px;
+
+  .breadcrumb--list {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    .ellipseshide {
+      display: none;
+    }
+    .hide {
+      display: none;
+    }
+    li {
+      // max-width: 0;
+      width: auto;
+      
+      a {
+        color: $darkgray;
+        text-decoration: none;
+        cursor: url('../img/cursor.png'),pointer;
+
+        &.firstchild {
+          color: $green;
+        }
+
+      }
+
+      &:first-child {
+        color: $green;
+        .arrow {
+          color: $darkgray
+        }
+      }
+      // cursor: pointer;
+      cursor: url('../img/cursor.png' ), pointer;
+
+      .arrow {
+        float: left;
+        margin: 0 15px;
+      }
+
+      &:hover {
+        span {
+          color: $green;
+        }
+        a {
+          color: $green;
+        }
+      }
+    }
+  }
+}

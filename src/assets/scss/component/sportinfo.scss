@@ -1,0 +1,78 @@
+.sport--type {
+  @include responsive($large) {
+    padding: 0 35px;
+  }
+  @include responsive($medium) {
+    height: 110px;
+  }
+  @include responsive($small) {
+    align-items: center;
+    height: auto;
+    justify-content: center;
+    padding: 15px;
+  }
+  align-items: center;
+  background-color: $green60;
+  display: flex;
+  flex-direction: row;
+  height: 170px;
+  padding:  0 50px;
+
+  .infos {
+    @include responsive($small) {
+      flex-direction: column;
+    }
+    display: flex;
+  }
+
+  .info--item {
+    @include responsive($large) {
+      padding: 0 20px;
+    }
+    @include responsive($medium) {
+      margin: 0;
+      padding: 0;
+    }
+    @include responsive($small) {
+      margin: 0;
+      padding: 0;
+    }
+
+    align-items: center;
+    display: flex;
+    margin-right: 50px;
+
+    &:nth-child(n+1) {
+      margin: 10px 25px;
+    }
+  }
+
+  .informations {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+  }
+
+  .icon {
+    @include responsive($medium) {
+      font-size: 70px;
+    }
+
+    color: $green;
+    font-size: 90px;
+  }
+
+  .smallinfo {
+    color: $darkgray;
+    font-size: 16px;
+  }
+
+  .biginfo {
+    @include responsive($medium) {
+      font-size: 30px;
+    }
+
+    color: $darkgray;
+    font-size: 40px;
+  }
+}

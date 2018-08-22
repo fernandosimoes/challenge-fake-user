@@ -1,0 +1,29 @@
+
+@mixin responsive($width) {
+  @media (max-width: $width) {
+    @content;
+  }
+}
+
+
+$green :#1abc9c;
+$green60 :rgba(26,188,156, 0.3);
+$contentWidth: 1920px;
+$bordercolor: #a9afae;
+$lightgray: #f8f8f8;
+$mediumgray: #e3e3e3;
+$white: #fff;
+$darkgray: #333333;
+$black: #000;
+$error: red;
+$xs: 575px;
+$small: 767px;
+$medium: 991px;
+$large: 1199px;
+
+
+
+    // @include responsive($large) {}
+    // @include responsive($medium) {}
+    // @include responsive($small) {}
+    // @include responsive($xs) {}

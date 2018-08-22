@@ -1,0 +1,31 @@
+Cliente: CPqD - Pólo II de Alta Tecnologia de Campinas
+Experiência: 
+    Conhecimentos requeridos: - 
+        Conhecimento do ciclo de desenvolvimento de aplicações WEB;
+        Experiência com HTML, JavaScript e CSS; -OK
+        Experiência com SaSS ou LESS; -OK
+        Experiência em ReactJS -OK;
+        Prática no desenvolvimento de wireframes e protótipos (Defina??);
+
+        Experiência com desenvolvimento de Layouts responsivos; (html and sass with flexbox or css framework )  - OK
+        Conhecimento de UI design (Criar layouts no photoshop por exemplo?)
+        Usabilidade e técnicas para melhoria da experiência do usuário (UX); (No desenvolvimento OK)
+        Conhecimento de versionamento de código utilizando GIT; -OK 
+        Sistemas operacionais Unix/Linux. (Ja trabalhei com MAC nao tenho experiencia trabalhando em ambiente linux) 
+
+        Integração continua; - (Não possuo)
+
+Conhecimentos desejáveis: - 
+    Metodologia ágil de desenvolvimento de software (SCRUM); - OK 
+    Prática com Gulp ou Webpack; - OK
+    Experiência com Node.JS; (Desenvolvimento de um projeto pequeno de leitura de arquivo e processamento do conteudo.)
+    Desenvolvimento de aplicações mobile (Android);(Hibrido ou react native) -OK Nativo (nao) 
+    Experiência com interfaces customizadas e animações; - (Normalmente usando jquery ou css3)
+    Conhecimento de Material Design - OK (Normalmente é só seguir a documentação)
+
+    Conhecimentos em Typescript; (Conhecimento mais basico)
+    Testes unitários e automatizados; (Conhecimento mais basico)
+
+Formação Acadêmica: Superior Completo - OK
+
+Local: Campinas (Rodovia Campinas/Mogi Mirim)

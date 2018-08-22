@@ -1,0 +1,101 @@
+.users {
+  position: relative;
+
+  .userTitle {
+    align-items: center;
+    display: flex; 
+  }
+
+  .userline {
+    border: 1px solid $mediumgray;
+    margin-left: 45px;
+    margin-right: 40px;
+    width: 100%;
+  }
+
+  h2 {
+    font-size: 40px;
+    margin:  15px 0;
+  }
+
+  .dataTable-search {
+    position: absolute;
+    right: 50px;
+    top: 20px;
+  }
+}
+
+.dataTable-table {
+
+  tr {
+    height: 60px;
+
+    &.table--title {
+      background: $white;
+      height: auto;
+
+      th {
+        padding: 0
+      }
+
+      &:hover {
+        background: none;
+      }
+    }
+
+    td {
+      vertical-align: middle;
+
+      .posts {
+        color: $green;
+        cursor: url('../img/cursor.png' ), pointer;
+
+      }
+      .albums {
+        @extend .posts;
+      }
+    }
+
+    .trash {
+      color: $green;
+      cursor: url('../img/cursor.png' ), pointer;
+      display: none;
+    }
+
+    &:nth-child(even) {
+      background: $lightgray;
+    };
+
+    &:nth-child(odd) {
+      background: $white;
+    }
+
+    &:hover {
+      background: $mediumgray;
+
+      .trash {
+        display: block;
+      }
+    }
+  }
+}
+
+
+.input {
+  position: relative;
+
+  i {
+    position: absolute;
+    top: 9px;
+    left: 5px;
+    color: $bordercolor;  
+  }
+
+  input {
+    width: 220px;
+    height: 30px;
+    padding: 0 25px;
+    border-radius: 5px;
+    border: 1px solid $bordercolor;
+  }
+}
