@@ -22,7 +22,7 @@ class Breadcrumbs extends Component {
                 </li>
                 )
             }
-            if ((k == lastposition-1) && lastposition > 3) { 
+            if ((k == lastposition-1) && lastposition > 3) {
                 return (
                     <li key={k}>
                     <div className="arrow">
@@ -55,7 +55,7 @@ class Breadcrumbs extends Component {
                     {pages.map(page=>{
                         return page;
                     })}
-                    
+
                 </ul>
             </div>
         );

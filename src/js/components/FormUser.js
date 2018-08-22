@@ -80,13 +80,12 @@ class FormUser extends Component {
         this.setState(field);
     }
     render() {
-        console.log(this.props);
-        // if (this.props.addwithsuccess) {
-        //     setTimeout(() => {
-        //         this.props.hidemessage()
-        //         document.querySelector('.backtousers').click()
-        //     }, 1500);
-        // }
+        if (this.props.addwithsuccess) {
+            setTimeout(() => {
+                this.props.hidemessage()
+                document.querySelector('.backtousers').click()
+            }, 1500);
+        }
         return (
             <div>
                 <Breadcrumbs urlinfo={ this.props.location } />

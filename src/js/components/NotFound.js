@@ -1,11 +1,15 @@
 import React from 'react';
-import Breadcrumbs from "./Breadcrumbs"; 
+import Breadcrumbs from "./Breadcrumbs";
+import {Link} from 'react-router-dom'
 const NotFound = (props) => {
   console.log(props)
   return (
     <div>
       <Breadcrumbs urlinfo={props.location} />
-      Route not Found.
+      <div className="notfound">
+        Route not Found.
+        <Link to='/'>Back</Link>
+      </div>
     </div>
   );
 };
