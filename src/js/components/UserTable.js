@@ -161,7 +161,7 @@ class UserTable extends Component {
                   </tr>
                 </thead>
                 <tbody>
-                  {!users.length && <tr> <td colSpan="9">No user Founded</td> </tr>}
+                  {!users.length && <tr><td colSpan="9">0 result with this filter</td></tr>}
                   {users.length > 0 && users.map((user, key) => {
                     const rideingroup = user.ridegroup ? user.ridegroup : this.rideingroup();
                     const dayoftheweek = user.weekday ? user.weekday : this.rideingroup();

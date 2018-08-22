@@ -1,6 +1,8 @@
 # Desafio fake users
 
 ## To run this project
+  * `yarn` ou `npm i`.
+  * `yarn start` ou `npm run start`.
 
 ## Objetivos e soluções
 **Foi incluido um link tanto para adicionar usuario quando para testar o breacrumb dessa forma existe uma navegação e um controle da rota podendo fazer o breacrumb consumindo dados da propria url.**
