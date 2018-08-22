@@ -1,7 +1,7 @@
 import * as actiontypes from '../actiontypes'
 const initialState = {
   users: [],
-  addwithsuccess: true,
+  addwithsuccess: false,
   loading: true
 }
 
@@ -15,7 +15,7 @@ const users = (state = initialState, action) => {
       const userFilter = (user) => {
         return user.id !== action.payload.id
       }
-      return {...state, users: state.users.filter(userFilter), addwithsuccess: true}
+      return {...state, users: state.users.filter(userFilter)}
     case actiontypes.HIDE_MESSAGE:
       return {...state, addwithsuccess: action.payload}
     default:
