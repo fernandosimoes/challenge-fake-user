@@ -50,3 +50,10 @@ export const hidemessage = () => {
     payload: false
   }
 }
+
+export const removeuser = (user) => {
+  return {
+    type: actiontypes.REMOVE_USER,
+    payload: user
+  }
+}

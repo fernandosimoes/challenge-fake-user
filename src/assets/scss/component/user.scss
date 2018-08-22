@@ -3,7 +3,11 @@
 
   .userTitle {
     align-items: center;
-    display: flex; 
+    display: flex;
+
+    @include responsive($xs) {
+      flex-direction: column;
+    }
   }
 
   .userline {
@@ -27,15 +31,34 @@
 
 .dataTable-table {
 
+  table {
+    width: 100%;
+  }
+
   tr {
     height: 60px;
+
+    th.filter {
+      color: $green;
+      cursor: pointer;
+    }
 
     &.table--title {
       background: $white;
       height: auto;
 
       th {
-        padding: 0
+        padding: 0;
+
+        @include responsive($medium) {
+          font-size: 14px;
+        }
+
+        @include responsive($small) {
+          display: inline-block;
+          font-size: 14px;
+          margin: 10px 10px;
+        }
       }
 
       &:hover {
@@ -44,15 +67,31 @@
     }
 
     td {
+      padding: 5px;
+      text-align: center;
       vertical-align: middle;
+
+      @include responsive($medium) {
+        font-size: 12px;
+      }
+
+      @include responsive($small) {
+        display: inline-block;
+        margin: 5px 10px 0;
+      }
 
       .posts {
         color: $green;
         cursor: url('../img/cursor.png' ), pointer;
 
       }
+
       .albums {
         @extend .posts;
+      }
+
+      &:last-child {
+        width: 30px;
       }
     }
 
@@ -85,17 +124,32 @@
   position: relative;
 
   i {
+    color: $bordercolor;
+    left: 5px;
     position: absolute;
     top: 9px;
-    left: 5px;
-    color: $bordercolor;  
   }
 
   input {
-    width: 220px;
-    height: 30px;
-    padding: 0 25px;
     border-radius: 5px;
     border: 1px solid $bordercolor;
+    height: 30px;
+    padding: 0 25px;
+    width: 220px;
+  }
+}
+
+.loading {
+  align-content: center;
+  color: $green;
+  display: flex;
+  font-size: 80px;
+  justify-content: center;
+
+  .centericon {
+    align-items: center;
+    display: flex;
+    height: 200px;
+    width: 100px;
   }
 }

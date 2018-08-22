@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Breadcrumbs from "./Breadcrumbs";
+import Loading from "./Loading";
 import {
     Link, Redirect
 } from "react-router-dom";
@@ -80,12 +81,12 @@ class FormUser extends Component {
     }
     render() {
         console.log(this.props);
-        if (this.props.addwithsuccess) {
-            setTimeout(() => {
-                this.props.hidemessage()
-                document.querySelector('.backtousers').click()
-            }, 1500);
-        }
+        // if (this.props.addwithsuccess) {
+        //     setTimeout(() => {
+        //         this.props.hidemessage()
+        //         document.querySelector('.backtousers').click()
+        //     }, 1500);
+        // }
         return (
             <div>
                 <Breadcrumbs urlinfo={ this.props.location } />
@@ -118,14 +119,14 @@ class FormUser extends Component {
                                 </div>
                             </div>
                         </div>
-                        {this.props.addwithsuccess && <div className="">User added with success</div>}
+                        {this.props.addwithsuccess && <div className="successadded">User added with success</div>}
                         <form className="registerform" onSubmit={this.submitForm}>
 
                             <div className="columns">
                                 <div className="column">
                                     <div className="field">
                                         <label htmlFor="username">Username</label>
-                                        
+
                                         <input type="text" name="username" id="username" className={(this.state.errors && this.state.username.length === 0) ? 'inputerror' : ''} onChange={this.changeFormValue}/>
                                         {this.state.errors && this.state.username.length === 0 && <span className="error">Username is requied</span>}
 
